@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: space-evenly;
+  margin: 10% auto;
+  width: 50%;
+  text-align: center;
+}
+
+.container div {
+  padding: 20px;
+  border: 1px solid rgb(172, 170, 170);
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: right;
+  background-color: rgb(172, 170, 170);
+  color: white;
+  font-size: 25px;
+}
+
+.item0 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.special {
+  background-color: rgb(255, 145, 0);
+}

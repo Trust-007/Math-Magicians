@@ -7,9 +7,10 @@
   text-align: center;
 }
 
-.container div {
+.container button {
   padding: 20px;
   border: 1px solid rgb(172, 170, 170);
+  outline: none;
 }
 
 .item1 {

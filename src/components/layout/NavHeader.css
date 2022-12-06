@@ -1,0 +1,36 @@
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(22, 21, 21);
+}
+
+nav div {
+  width: 100%;
+  font-size: 25px;
+  background-color: transparent;
+  color: aqua;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  background-color: transparent;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  border-bottom: 2px solid cyan;
+}

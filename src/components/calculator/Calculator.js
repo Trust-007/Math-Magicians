@@ -13,6 +13,7 @@ const Calculator = () => {
   };
 
   const { total, next, operation } = result;
+
   return (
     <div className={classes.container}>
       <button type="button" className={classes.item1} onClick={getNameHandler}>

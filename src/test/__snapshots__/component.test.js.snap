@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`testing components full app rendering/navigating 1`] = `
+<a
+  class=""
+  href="/home"
+>
+  Home
+</a>
+`;
+
 exports[`testing components renders  correctly 1`] = `
 <div
   className="calc-content"

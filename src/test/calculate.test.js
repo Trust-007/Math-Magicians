@@ -1,15 +1,15 @@
-import calculate from "../logic/calculate";
+import calculate from '../logic/calculate';
 
-describe("Calculate test cases", () => {
-  test("expect object with total:2, next:5 and operation:+ to be total: 7, operation: null, next: null", () => {
+describe('Calculate test cases', () => {
+  test('expect object with total:2, next:5 and operation:+ to be total: 7, operation: null, next: null', () => {
     const obj = {
-      total: "2",
-      next: "5",
-      operation: "+",
+      total: '2',
+      next: '5',
+      operation: '+',
     };
-    const buttonName = "=";
+    const buttonName = '=';
     const output = {
-      total: "7",
+      total: '7',
       next: null,
       operation: null,
     };
@@ -17,29 +17,29 @@ describe("Calculate test cases", () => {
     expect(assert).toStrictEqual(output);
   });
 
-  test("expect object with total:5, next:2 and operation:+ to be total: 7, operation: +, next: null", () => {
+  test('expect object with total:5, next:2 and operation:+ to be total: 7, operation: +, next: null', () => {
     const obj = {
-      total: "2",
-      next: "5",
-      operation: "+",
+      total: '2',
+      next: '5',
+      operation: '+',
     };
-    const buttonName = "+";
+    const buttonName = '+';
     const output = {
-      total: "7",
+      total: '7',
       next: null,
-      operation: "+",
+      operation: '+',
     };
     const assert = calculate(obj, buttonName);
     expect(assert).toStrictEqual(output);
   });
 
-  test("expect object with values total:9 , next:null, operation:null to be all null", () => {
+  test('expect object with values total:9 , next:null, operation:null to be all null', () => {
     const obj = {
-      total: "9",
+      total: '9',
       next: null,
       operation: null,
     };
-    const buttonName = "AC";
+    const buttonName = 'AC';
     const output = {
       total: null,
       next: null,
@@ -49,15 +49,15 @@ describe("Calculate test cases", () => {
     expect(assert).toStrictEqual(output);
   });
 
-  test("expect object with values total:9 , next:null, operation:null to be total: -9", () => {
+  test('expect object with values total:9 , next:null, operation:null to be total: -9', () => {
     const obj = {
-      total: "9",
+      total: '9',
       next: null,
       operation: null,
     };
-    const buttonName = "+/-";
+    const buttonName = '+/-';
     const output = {
-      total: "-9",
+      total: '-9',
       next: null,
       operation: null,
     };
@@ -65,17 +65,17 @@ describe("Calculate test cases", () => {
     expect(assert).toStrictEqual(output);
   });
 
-  test("expect object with values total:9 , next:-2, operation:null to be total:9, next: 2", () => {
+  test('expect object with values total:9 , next:-2, operation:null to be total:9, next: 2', () => {
     const obj = {
-      total: "9",
-      next: "-2",
-      operation: "%",
+      total: '9',
+      next: '-2',
+      operation: '%',
     };
-    const buttonName = "+/-";
+    const buttonName = '+/-';
     const output = {
-      total: "9",
-      next: "2",
-      operation: "%",
+      total: '9',
+      next: '2',
+      operation: '%',
     };
     const assert = calculate(obj, buttonName);
     expect(assert).toStrictEqual(output);

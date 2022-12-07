@@ -10,7 +10,6 @@ const Calculator = () => {
     setResult({
       ...res,
     });
-    console.log(res);
   };
 
   const { total, next, operation } = result;

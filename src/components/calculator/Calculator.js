@@ -10,9 +10,11 @@ const Calculator = () => {
     setResult({
       ...res,
     });
+    console.log(res);
   };
 
   const { total, next, operation } = result;
+
   return (
     <div className={classes.container}>
       <button type="button" className={classes.item1} onClick={getNameHandler}>

@@ -71,7 +71,7 @@ Math-Magicians
 ### Key Features <a name="key-features"></a>
 
 - **[Uses Functional components]**
-- **[Uses Big.js ]**
+- **[Uses React-Router]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +81,7 @@ Math-Magicians
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](#)
+- [Live Demo Link](https://math-magician-9pdo.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
